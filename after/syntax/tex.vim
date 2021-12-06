@@ -201,8 +201,8 @@ syn match texStatement '\\qquad' contained conceal cchar=
 
 syn match texDelimiter '\\{' contained conceal cchar={
 syn match texDelimiter '\\}' contained conceal cchar=}
-syn match texDelimiter '\\mleft(\>\s*' contained conceal cchar=(
-syn match texDelimiter '\s*\\mright)\>' contained conceal cchar=)
+syn match texDelimiter '\\mleft' contained conceal cchar=
+syn match texDelimiter '\\mright' contained conceal cchar=
 
 syn match texMathSymbol '\\setminus\>' contained conceal cchar=\
 syn match texMathSymbol '\\coloneqq\>' contained conceal cchar=≔
