@@ -1,6 +1,6 @@
 # tex-conceal.vim
 
-A vim plugin extends the Conceal feature for LaTeX.
+A vim plugin gives some sophistcated additions of the Conceal feature for LaTeX.
 
 ### Without conceal
 <img src="https://github.com/KeitaNakamura/tex-conceal.vim/blob/master/normal.png" width="800">
@@ -17,18 +17,18 @@ A vim plugin extends the Conceal feature for LaTeX.
 ## Installation
 
 ```vim
-Plugin 'KeitaNakamura/tex-conceal.vim'                 " for Vundle
-Plug   'KeitaNakamura/tex-conceal.vim', {'for': 'tex'} " for VimPlug
+Plugin 'N-yam-my/tex-conceal.vim'                 " for Vundle
+Plug   'N-yam-my/tex-conceal.vim', {'for': 'tex'} " for VimPlug
 ```
 
 ### For [vimtex](https://github.com/lervag/vimtex) user
 
-[vimtex](https://github.com/lervag/vimtex) started using its own conceal feature from v2.
-Those changes break this plugin for now.
-So you should choose vimtex v2 or the latest version v1.6 that tex-conceal works.
+[vimtex](https://github.com/lervag/vimtex) uses its own conceal feature from v2.
+That breaks this plugin for now.
+So when you install this plugin, you should set `g:vimtex_syntax_conceal` to 0 in order to disable that.
 
-```vim
-Plug 'lervag/vimtex', {'tag': 'v1.6'}
+```vimrv
+let g:vimtex_syntax_conceal
 ```
 
 ## Options
