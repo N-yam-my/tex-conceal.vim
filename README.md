@@ -25,10 +25,10 @@ Plug   'N-yam-my/tex-conceal.vim', {'for': 'tex'} " for VimPlug
 
 [vimtex](https://github.com/lervag/vimtex) uses its own conceal feature from v2.
 That breaks this plugin for now.
-So when you install this plugin, you should set `g:vimtex_syntax_conceal` to 0 in order to disable that.
+So when you install this plugin, you should set `g:vimtex_syntax_conceal_disable` to 1 in order to disable that.
 
 ```vimrv
-let g:vimtex_syntax_conceal
+let g:vimtex_syntax_conceal_disable = 1
 ```
 
 ## Options
