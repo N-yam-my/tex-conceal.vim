@@ -220,8 +220,6 @@ syn match texDelimiter '\\{' contained conceal cchar={
 syn match texDelimiter '\\}' contained conceal cchar=}
 syn match texMathDelimMod '\\mleft' contained conceal
 syn match texMathDelimMod '\\mright' contained conceal
-syn match texMathDelimMod '\\ML' contained conceal
-syn match texMathDelimMod '\\MR' contained conceal
 
 syn match texMathSymbol '\\setminus\>' contained conceal cchar=\
 syn match texMathSymbol '\\coloneqq\>' contained conceal cchar=≔
