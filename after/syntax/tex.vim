@@ -3,7 +3,7 @@ syn match texMathCmdEnv /\\begin{empheq}/  contained contains=texCmdMathEnv next
 syn match texMathCmdEnv /\\end{empheq}/  contained contains=texCmdMathEnv
 syn match texMathEnvBgnEnd /\\\%(begin\|ebd\)\>{empheq}/  contained contains=texCmdMathEnv
 syn match texMathError /\\end{empheq}/
-syn match texMathZoneEnv start=/\\begin{\z(empheq\)}/ end=/\\end{\zl}/  keepend contains=texMathEnvBgnEnd,@texClusterMath
+syn match texMathZoneEnv start=/\\begin{empheq}/ end=/\\end{empheq}/  keepend contains=texMathEnvBgnEnd,@texClusterMath
 
 if !has('conceal')
   finish
