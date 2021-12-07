@@ -2,6 +2,16 @@ if !has('conceal')
   finish
 endif
 
+" For Compatibility
+hi link texMathZoneG texMathZoneEnv
+hi link texMathZoneGS texMathZoneEnvStarred
+hi link texMathZoneW texMathZone
+hi link texMathZoneX texMathZoneX
+hi link texMathZoneY texMathZoneXX
+hi link texMathZoneZ texMathZoneEnsured
+
+hi link texStatement texCmd
+
 " Original file is https://github.com/wjakob/wjakob.vim/blob/master/after/syntax/tex.vim and https://github.com/KeitaNakamura/tex-conceal.vim
 " https://github.com/wjakob/wjakob.vim/blob/master/after/syntax/tex.vim
 " more reasonably sized symbols that were already defined
