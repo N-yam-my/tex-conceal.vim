@@ -230,14 +230,17 @@ syn match texMathSymbol '\\\!' contained conceal
 syn match texMathSymbol '\\therefore' contained conceal cchar=∴
 syn match texMathSymbol '\\because' contained conceal cchar=∵
 
-
+syn match texMathSymbol '\\hslash' contained conceal cchar=ℏ
+syn match texMathSymbol '\nparallel' contained conceal cchar=∦
 syn match texMathSymbol '\\int' contained conceal cchar=∫
 syn match texMathSymbol '\\iint' contained conceal cchar=∬
 syn match texMathSymbol '\\iiint' contained conceal cchar=∭
+syn match texMathSymbol '\\iiiint' contained conceal cchar=∭
 syn match texMathSymbol '\\idotsint' contained conceal cchar=∭
 syn match texMathSymbol '\\oint' contained conceal cchar=∮
-syn match texMathSymbol '\\sum' contained conceal cchar=∑
-syn match texMathSymbol '\\prod' contained conceal cchar=∏
+syn match texMathSymbol '\\sum' contained conceal cchar=Σ
+syn match texMathSymbol '\\prod' contained conceal cchar=Π
+syn match texMathSymbol '\\Upsi' contained conceal cchar=ᴪ
 
 if !exists('g:tex_conceal_frac')
   let g:tex_conceal_frac = 0
