@@ -234,10 +234,10 @@ syn match texMathSymbol '\\because' contained conceal cchar=∵
 syn match texMathSymbol '\\int' contained conceal cchar=∫
 syn match texMathSymbol '\\iint' contained conceal cchar=∬
 syn match texMathSymbol '\\iiint' contained conceal cchar=∭
+syn match texMathSymbol '\\idotsint' contained conceal cchar=∫⋯∫
 syn match texMathSymbol '\\oint' contained conceal cchar=∮
 syn match texMathSymbol '\\sum' contained conceal cchar=∑
 syn match texMathSymbol '\\prod' contained conceal cchar=∏
-
 
 if !exists('g:tex_conceal_frac')
   let g:tex_conceal_frac = 0
