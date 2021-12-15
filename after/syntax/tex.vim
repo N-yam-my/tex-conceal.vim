@@ -249,7 +249,13 @@ syn match texMathSymbol '\\sum' contained conceal cchar=Σ
 syn match texMathSymbol '\\prod' contained conceal cchar=Π
 syn match texMathSymbol '\\Uppsi' contained conceal cchar=ᴪ
 
-syn match texMathCmd '\\displaystyle' contained conceal cchar= 
+syn match texMathCmd '\\displaystyle' contained conceal
+syn match texMathCmd '\\textstyle' contained conceal
+syn match texMathCmd '\\scriptstyle' contained conceal
+syn match texMathCmd '\\scriptscriptstyle' contained conceal
+syn match texMathCmd '\\limits' contained conceal
+syn match texMathCmd '\\nolimits' contained conceal
+
 
 if !exists('g:tex_conceal_frac')
   let g:tex_conceal_frac = 0
