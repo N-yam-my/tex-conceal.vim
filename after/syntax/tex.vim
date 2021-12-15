@@ -213,6 +213,9 @@ syn match texStatement '\\item\>' contained conceal cchar=•
 syn match texStatement '\\ldots' contained conceal cchar=…
 syn match texStatement '\\quad' contained conceal cchar=  
 syn match texStatement '\\qquad' contained conceal cchar=    
+
+syn match texStatement '\\qed' contained conceal cchar=∎
+syn match texCmd '\\qed' contained conceal cchar=∎
 "syn match texStatement '\\\[' contained conceal cchar=⟦
 "syn match texStatement '\\\]' contained conceal cchar=⟧
 
@@ -255,8 +258,6 @@ syn match texMathCmd '\\scriptstyle' contained conceal
 syn match texMathCmd '\\scriptscriptstyle' contained conceal
 syn match texMathCmd '\\limits' contained conceal
 syn match texMathCmd '\\nolimits' contained conceal
-
-syn match texStatement '\\qed' contained conceal cchar=∎
 
 
 if !exists('g:tex_conceal_frac')
