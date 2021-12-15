@@ -256,6 +256,8 @@ syn match texMathCmd '\\scriptscriptstyle' contained conceal
 syn match texMathCmd '\\limits' contained conceal
 syn match texMathCmd '\\nolimits' contained conceal
 
+syn match texCmd '\\qed' contained conceal cchar=∎
+
 
 if !exists('g:tex_conceal_frac')
   let g:tex_conceal_frac = 0
