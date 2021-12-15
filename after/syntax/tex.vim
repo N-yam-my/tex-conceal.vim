@@ -214,10 +214,10 @@ syn match texStatement '\\ldots' contained conceal cchar=…
 syn match texStatement '\\quad' contained conceal cchar=  
 syn match texStatement '\\qquad' contained conceal cchar=    
 
-syn match texStatement '\\qed' contained conceal cchar=∎
-syn match texCmd '\\qed' contained conceal cchar=∎
-"syn match texStatement '\\\[' contained conceal cchar=⟦
-"syn match texStatement '\\\]' contained conceal cchar=⟧
+" syn match texStatement '\\qed' contained conceal cchar=∎
+syn match texCmd '\\qed' conceal cchar=∎
+" syn match texStatement '\\\[' contained conceal cchar=⟦
+" syn match texStatement '\\\]' contained conceal cchar=⟧
 
 syn match texDelimiter '\\{' contained conceal cchar={
 syn match texDelimiter '\\}' contained conceal cchar=}
