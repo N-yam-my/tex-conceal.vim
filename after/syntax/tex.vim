@@ -1,6 +1,6 @@
 " Add empheq environment
-syn match texMathCmdEnv '\\begin{empheq}'  contained contains=texCmdMathEnv nextgroup=texMathArrayArg skipwhite skipnl
-syn match texMathCmdEnv '\\end{empheq}'  contained contains=texCmdMathEnv
+" syn match texMathCmdEnv '\\begin{empheq}'  contained contains=texCmdMathEnv nextgroup=texMathArrayArg skipwhite skipnl
+" syn match texMathCmdEnv '\\end{empheq}'  contained contains=texCmdMathEnv
 syn match texMathEnvBgnEnd '\\\%(begin\|ebd\)\>{empheq}'  contained contains=texCmdMathEnv
 " syn match texMathError '\\end{empheq}'
 syn region texMathZoneEnv start=/\\begin{empheq}/ end=/\\end{empheq}/  keepend contains=texMathEnvBgnEnd,@texClusterMath
