@@ -251,6 +251,10 @@ syn match texMathSymbol '\\oint' contained conceal cchar=∮
 syn match texMathSymbol '\\sum' contained conceal cchar=Σ
 syn match texMathSymbol '\\prod' contained conceal cchar=Π
 syn match texMathSymbol '\\Uppsi' contained conceal cchar=ᴪ
+syn match texMathSymbol '\\precsim' contained conceal cchar=≾
+syn match texMathSymbol '\\succsim' contained conceal cchar=≿
+syn match texMathSymbol '\\partial' contained conceal cchar=∂
+syn match texMathSymbol '\\nabla' contained conceal cchar=∇
 
 syn match texMathCmd '\\displaystyle' contained conceal
 syn match texMathCmd '\\textstyle' contained conceal
